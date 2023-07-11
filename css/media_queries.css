@@ -1,0 +1,132 @@
+@media (min-width: 320px) {
+    .heading>h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .heading>p {
+        font-size: 1em;
+    }
+
+    .container-section-form .row-form {
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width:576px) {
+    .heading>h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .heading>p {
+        font-size: 2em;
+    }
+
+    .feature-program {
+        padding: 100px 0;
+    }
+
+    .feature-program .card {
+        margin-bottom: 0;
+    }
+
+    .row-card {
+        gap: 20px;
+    }
+
+    .about-us {
+        padding: 100px 0;
+    }
+
+    .about-us-text {
+        padding: 0 30px 50px 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .btn-menu+label {
+        display: none;
+    }
+
+    .overlay {
+        padding: 100px 0;
+    }
+
+    .row-form .form-body {
+        margin-bottom: 0;
+    }
+
+    .container-section-form .row-form {
+        justify-content: end;
+    }
+
+    .heading {
+        text-align: start;
+        margin-left: 50px;
+        padding-left: 50px;
+    }
+
+    .heading h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .heading p {
+        font-size: 1em;
+    }
+
+    #portfolio {
+        padding: 100px 0;
+    }
+
+    .about-us {
+        padding: 100px 0;
+    }
+
+    .overlay-info {
+        padding: 100px 0;
+    }
+
+    .price-card {
+        padding: 100px 0;
+    }
+
+    footer {
+        padding: 100px 0;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container-section-form .row-form {
+        justify-content: center;
+    }
+
+    .heading h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .heading p {
+        font-size: 2em;
+    }
+
+    footer .about {
+        padding-right: 100px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container-section-form .row-form {
+        justify-content: end;
+    }
+
+    .about-us-text {
+        padding: 20px 50px 0 0;
+    }
+
+}

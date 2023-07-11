@@ -1,0 +1,577 @@
+@import url(./fonts.css);
+@import url(./slider.css);
+
+:root {
+    --fonts-color: #525252;
+    --heading-color: #576FED;
+    --bg-color-white: #fff;
+    --btn-hover: #3e4fa8;
+}
+
+header {
+    background-color: var(--bg-color-white);
+}
+
+.btn-menu {
+    display: none;
+}
+
+.btn-menu+label span {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--heading-color);
+    transition-duration: .25s;
+}
+
+.btn-menu+label span::before,
+.btn-menu+label span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--heading-color);
+    transition-duration: .25s;
+}
+
+.btn-menu+label span::before {
+    top: 7px;
+}
+
+.btn-menu+label span::after {
+    bottom: 7px;
+}
+
+.btn-menu:checked~.navbar-collapse {
+    display: block;
+}
+
+.btn-menu:checked+label span {
+    transform: rotate(45deg);
+}
+
+.btn-menu:checked+label span::before {
+    transform: rotate(0);
+    top: 0;
+}
+
+.btn-menu:checked+label span::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--fonts-color);
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    width: 30px;
+    height: 2px;
+    background-color: var(--heading-color);
+    margin: 0 auto;
+    transition: all 0.1s ease;
+}
+
+.nav-link:hover.nav-link::after,
+.nav-link:hover {
+    color: var(--heading-color);
+    visibility: visible;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+/* .navbar-collapse ul {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: end;
+} */
+
+/* Section Form----Start*/
+
+.section-form {
+    background-image: url(../img/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(87, 111, 237, 0.6);
+    padding: 50px 0;
+}
+
+.container-section-form .row-form {
+    justify-content: center;
+}
+
+.form-body {
+    background-color: var(--bg-color-white);
+    padding: 25px 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.form-body input {
+    background-color: #eee;
+}
+
+.form-title {
+    color: var(--heading-color);
+    font-family: 'opensans-semi-bold';
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.form-body input,
+.form-body select {
+    height: 50px;
+    cursor: pointer;
+}
+
+.form-select {
+    background-color: #eee;
+    color: #55585B;
+}
+
+.btn-row {
+    margin: 10px 0;
+}
+
+.btn-form {
+    padding: 0;
+    width: 65%;
+}
+
+.btn-width {
+    width: 100%;
+    height: 50px;
+    background-color: var(--heading-color);
+}
+
+.btn-width:hover {
+    background-color: var(--btn-hover);
+}
+
+.heading {
+    color: var(--bg-color-white);
+    text-align: center;
+}
+
+.heading h1 {
+    text-transform: uppercase;
+    font-family: 'opensans-bold';
+    font-size: 2em;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.heading p {
+    font-family: 'dancing-medium';
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+/* Section Form----End*/
+/* Section Feature Program----Start*/
+
+.feature-program {
+    padding: 50px 0;
+    background-color: var(--bg-color-white);
+}
+
+.heading-block h2 {
+    font-family: 'opensans-bold';
+    color: var(--heading-color);
+}
+
+.heading-block p {
+    font-family: 'dancing-medium';
+    font-size: 2em;
+    color: var(--fonts-color);
+}
+
+.row-card {
+    justify-content: center;
+}
+
+.feature-program .link-card-block {
+    padding: 0;
+    box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.card {
+    border: none;
+}
+
+.feature-program .link-card-block:hover {
+    transform: translateY(-5px);
+}
+
+.feature-program .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row-card .card-body {
+    color: var(--fonts-color);
+    padding: 0;
+}
+
+.card-text-padding {
+    padding: 35px;
+}
+
+.card-title {
+    color: var(--fonts-color);
+    font-family: 'opensans-bold';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Section Feature Program----End*/
+/* Section Portfolio----Start*/
+
+#portfolio {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.no-padding,
+.no-padding div {
+    padding: 0;
+}
+
+#portfolio img {
+    width: 100%;
+}
+
+.portfolio-box-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: rgba(87, 111, 237, 0.5);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.portfolio-box-caption-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--heading-color);
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-color-white);
+    border-radius: 50%;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+/* Section Portfolio----End*/
+/* Section About us----Start*/
+
+.about-us {
+    background-color: var(--bg-color-white);
+    padding: 50px 0;
+}
+
+.about-us-text {
+    padding-bottom: 50px;
+}
+
+.about-us h2 {
+    font-family: 'opensans-bold';
+    color: var(--heading-color);
+    margin-bottom: 30px;
+}
+
+.about-us-text p {
+    font-family: 'opensans-regular';
+    color: var(--fonts-color);
+}
+
+.col-slider {
+    padding: 0 30px;
+}
+
+/* Section About us----End*/
+/* Section Info----Start*/
+
+.info {
+    background-image: url(../img/bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 111, 237, 0.7);
+    padding: 50px 0;
+}
+
+.row-icon-block .col-md-3 {
+    padding: 20px;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-color-white);
+}
+
+.icon1 {
+    background-image: url(../icons/ico-01.png);
+}
+
+.icon2 {
+    background-image: url(../icons/ico-02.png);
+}
+
+.icon3 {
+    background-image: url(../icons/ico-03.png);
+}
+
+.icon4 {
+    background-image: url(../icons/ico-04.png);
+}
+
+.icon5 {
+    background-image: url(../icons/ico-05.png);
+}
+
+.icon6 {
+    background-image: url(../icons/ico-06.png);
+}
+
+.icon7 {
+    background-image: url(../icons/ico-07.png);
+}
+
+.icon8 {
+    background-image: url(../icons/ico-08.png);
+}
+
+.row-icon-block .icon-block-text {
+    pad: 25px;
+    font-family: 'opensans-regular';
+    color: var(--bg-color-white);
+}
+
+.row-icon-block .heading-icon {
+    font-family: 'opensans-bold';
+    color: var(--bg-color-white);
+    padding: 25px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Section Info----End*/
+/* Section Price Card----Start*/
+
+.price-card {
+    background-image: url(../img/bg-03.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.pricingTable {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    transform: translateZ(0px);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.pricingTable .pricingTable-header {
+    background-color: var(--heading-color);
+    color: #fff;
+    margin: -2px -2px 35px;
+    padding: 25px 0;
+}
+
+.pricingTable .heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.pricingTable .subtitle {
+    font-size: 14px;
+    display: block;
+}
+
+.pricingTable .price-value {
+    font-size: 72px;
+    font-weight: 600;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.pricingTable .currency {
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 40px;
+    left: -30px;
+}
+
+.pricingTable .month {
+    font-size: 20px;
+}
+
+.pricingTable .pricing-content {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricingTable .pricing-content li {
+    font-size: 16px;
+    color: var(--fonts-color);
+    line-height: 60px;
+}
+
+.pricingTable .pricing-content .border {
+    width: 25%;
+    height: 1px;
+    background-color: var(--fonts-color);
+    margin: 0 auto;
+}
+
+.pricingTable .read {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--heading-color);
+    border-right: none;
+    font-weight: 400;
+    color: var(--bg-color-white);
+    padding: 10px 50px;
+    transition: all 0.3s ease 0s;
+    border-radius: 15px;
+}
+
+.pricingTable .read:hover {
+    background-color: var(--btn-hover);
+    color: var(--bg-color-white);
+}
+
+/* Section Price Card----End*/
+/* Footer----Start*/
+
+footer {
+    width: 100%;
+    background-color: var(--heading-color);
+    color: var(--bg-color-white);
+    padding: 50px 0;
+
+}
+
+.footer-icons-list {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-icons-list a {
+    color: var(--bg-color-white);
+}
+
+.address-list li {
+    color: var(--bg-color-white);
+}
+
+.address-list .location p {
+    margin-left: 25px;
+}
+
+.address-list .location i {
+    font-size: 25px;
+}
+
+.address-list .icon-phone i {
+    font-size: 25px;
+}
+
+.phone {
+    margin-left: 25px;
+}
+
+.phone-link {
+    color: var(--bg-color-white);
+    text-decoration: none;
+}
+
+.links .links-list {
+    padding-top: 16px;
+}
+
+.links .links-list a {
+    color: var(--bg-color-white);
+    text-decoration: none;
+}
+
+.links .links-list .icons {
+    font-size: 25px;
+}
+
+.links .links-list .mail a {
+    margin-left: 25px;
+}
+
+.links .links-list .icon-planet a {
+    margin-left: 25px;
+}
+
+.copyright {
+    background-color: var(--btn-hover);
+    color: #b3acac;
+    text-align: center;
+    padding: 25px 0;
+    font-family: 'opensans-regular';
+    font-size: 14px;
+}
+
+/* Footer----End*/

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'opensans-medium';
+    src: url('../fonts/OpenSans-Medium.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'opensans-regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'opensans-semi-bold';
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'opensans-bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dancing-regular';
+    src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dancing-medium';
+    src: url('../fonts/DancingScript-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dancing-semi-bold';
+    src: url('../fonts/DancingScript-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dancing-bold';
+    src: url('../fonts/DancingScript-Bold.ttf') format('truetype');
+}
