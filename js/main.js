@@ -6,3 +6,18 @@ $(document).ready(function () {
         adaptiveHeight: true,
     });
 });
+
+// Проверка номера телефона
+let inp = document.getElementById('inputPassword3');
+
+inp.addEventListener('focus', _ => {
+    if (!/^\+\d*$/.test(inp.value))
+        
+        inp.value = '+';
+});
+
+inp.addEventListener('keypress', e => {
+    
+    if (!/\d/.test(e.key))
+        e.preventDefault();
+});
